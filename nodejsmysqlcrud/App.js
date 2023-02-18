@@ -5,11 +5,6 @@ const mysql = require("./connection").con
     // configuration
 app.set("view engine", "hbs");
 app.set("views", "./view")
-// app.use(express.static(__dirname + "/public"))
-
-// app.use(express.urlencoded())
-// app.use(express.json())
-// Routing
 app.get("/", (req, res) => {
     res.render("index")
 });
